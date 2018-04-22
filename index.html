@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vous souhaitez améliorer votre espagnol par la pratique ? Je serai ravi de pouvoir vous l'enseigner. Prise de RDV rapide.">
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -10,6 +12,9 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
         <title>Vamos a hablar</title>
+        
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        
     </head>
     <body>
         <header>
@@ -17,22 +22,22 @@
                 <div class="row">
                     <a class="logo" href="#">Vamos a hablar</a>
                     <ul class="main-nav">
-                        <li><a href="#">Présentation</a></li>
-                        <li><a href="#">Méthodes</a></li>
-                        <li><a href="#">Tarifs</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#introduction">Présentation</a></li>
+                        <li><a href="#method">Méthodes</a></li>
+                        <li><a href="#plan">Tarifs</a></li>
+                        <li><a href="#form">Contact</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="seville-text-box">
                 <h1>Cours particuliers d’espagnol à Paris.</h1>
-                <a class="btn btn-full" href="#">En savoir plus</a>
+                <a class="btn btn-full" href="#introduction">En savoir plus</a>
             </div>
         </header>
-        <section class="section-presentation">
+        <section id="introduction" class="section-presentation">
             <div class="row">
                 <h2>à propos de moi</h2>
-                <img class="author-img" src="resources/img/author.jpg">
+                <img class="author-img" src="resources/img/author.jpg" alt="Teacher picture">
                 <blockquote>
                     <p class="long-copy">
                         D'origine franco-espagnole, j'ai appris l'espagnol dès ma naissance en complément du français et du catalan.
@@ -47,7 +52,7 @@
                 
             </div>
         </section>
-        <section class="section-methods">
+        <section id="method" class="section-methods">
             <div class="row">
                 <h2>Suivi personnalisé</h2>
                 <p class="long-copy">
@@ -108,7 +113,7 @@
         </section>
         
         
-        <section class="section-plans">
+        <section id="plan" class="section-plans">
             <div class="row">
                 <h2>Et si vous commenciez demain ?</h2>
                 <p class="long-copy">Afin de faire connaissance et définir les attentes. La première heure est <b>gratuite</b>.</p>
@@ -177,7 +182,7 @@
             </div>
         </section>
         
-        <section class="section-form">
+        <section id="form" class="section-form">
             <div class="row">
                 <h2>Besoin de plus de renseignements ?</h2>
             </div>
@@ -201,7 +206,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label ofr="find-us">Comment m'avez-vous découvert?</label>
+                            <label for="find-us">Comment m'avez-vous découvert?</label>
                         </div>
                         <div class="col span-2-of-3">
                             <select name="find-us" id="find-us">
@@ -263,5 +268,8 @@
 
 <!-- 
 
+<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 
 -->

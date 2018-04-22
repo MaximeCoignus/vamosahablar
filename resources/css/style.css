@@ -11,6 +11,7 @@ Main color: #b33939
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -127,6 +128,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -168,7 +170,8 @@ input[type=submit]:active {
 /* ------------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../vendors/css/img/flag.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../vendors/css/img/flag-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../vendors/css/img/flag-min.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -180,6 +183,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
 
@@ -211,6 +215,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -225,7 +230,9 @@ header {
 .section-presentation img {
     width: 15%;
     border-radius: 50%;
+    -webkit-shape-outside: border-box;
     shape-outside: border-box;
+    -webkit-shape-margin: 1em;
     shape-margin: 1em;
     float: left;
     margin: 0 15px 0 170px;
@@ -248,7 +255,8 @@ header {
 /* TESTIMONIALS */
 /* ------------------------------------------------------- */
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../vendors/css/img/students.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../vendors/css/img/students-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../vendors/css/img/students-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -294,6 +302,7 @@ header {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
 }
 
@@ -396,6 +405,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #808080;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -413,6 +423,7 @@ footer {
 .ion-social-twitter,
 .ion-social-google,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
